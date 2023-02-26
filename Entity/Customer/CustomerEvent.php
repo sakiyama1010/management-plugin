@@ -36,10 +36,9 @@ if (!class_exists('\Plugin\Management42\Entity\Customer\CustomerEvent')) {
         private $id;
 
         /**
-         * @var string 顧客コード
+         * @var string|null 顧客コード
          *
          * @ORM\Column(name="customer_code", type="string", length=100)
-         * @Assert\NotBlank
          */
         private $customer_code;
 
