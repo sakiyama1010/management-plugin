@@ -28,8 +28,8 @@ services:
       - "var:/var/www/html/var"
       - "vendor:/var/www/html/vendor"
       - "node_modules:/var/www/html/node_modules"
-
-      - ../management-plugin:/management
+      # プラグイン参照する為に設定
+      - ../management-plugin:/Management42
     environment:
       # EC-CUBE environments
       APP_ENV: "dev"
