@@ -15,6 +15,8 @@ namespace Plugin\management\Entity\CashDisbursementDisbursement;
 
 use Doctrine\ORM\Mapping as ORM;
 use Eccube\Entity\AbstractEntity;
+use Eccube\Entity\Member;
+use Plugin\management\Entity\Master\DisbursementType;
 use Symfony\Component\Validator\Constraints as Assert;
 
 if (!class_exists(CashDisbursement::class, false)) {
@@ -116,5 +118,130 @@ if (!class_exists(CashDisbursement::class, false)) {
          * @ORM\Column(name="note", type="string", length=4000, nullable=true)
          */
         private $note;
+
+        public function getId(): ?int
+        {
+            return $this->id;
+        }
+
+        public function getSummary(): ?string
+        {
+            return $this->summary;
+        }
+
+        public function setSummary(string $summary): self
+        {
+            $this->summary = $summary;
+
+            return $this;
+        }
+
+        public function getPayee(): ?string
+        {
+            return $this->payee;
+        }
+
+        public function setPayee(string $payee): self
+        {
+            $this->payee = $payee;
+
+            return $this;
+        }
+
+        public function getPayAmountYen(): ?string
+        {
+            return $this->pay_amount_yen;
+        }
+
+        public function setPayAmountYen(string $pay_amount_yen): self
+        {
+            $this->pay_amount_yen = $pay_amount_yen;
+
+            return $this;
+        }
+
+        public function getPayAmountDollar(): ?string
+        {
+            return $this->pay_amount_dollar;
+        }
+
+        public function setPayAmountDollar(string $pay_amount_dollar): self
+        {
+            $this->pay_amount_dollar = $pay_amount_dollar;
+
+            return $this;
+        }
+
+        public function getPaymentDate(): ?\DateTimeInterface
+        {
+            return $this->payment_date;
+        }
+
+        public function setPaymentDate(\DateTimeInterface $payment_date): self
+        {
+            $this->payment_date = $payment_date;
+
+            return $this;
+        }
+
+        public function getCreateDate(): ?\DateTimeInterface
+        {
+            return $this->create_date;
+        }
+
+        public function setCreateDate(\DateTimeInterface $create_date): self
+        {
+            $this->create_date = $create_date;
+
+            return $this;
+        }
+
+        public function getUpdateDate(): ?\DateTimeInterface
+        {
+            return $this->update_date;
+        }
+
+        public function setUpdateDate(\DateTimeInterface $update_date): self
+        {
+            $this->update_date = $update_date;
+
+            return $this;
+        }
+
+        public function getNote(): ?string
+        {
+            return $this->note;
+        }
+
+        public function setNote(?string $note): self
+        {
+            $this->note = $note;
+
+            return $this;
+        }
+
+        public function getMember(): ?Member
+        {
+            return $this->Member;
+        }
+
+        public function setMember(?Member $Member): self
+        {
+            $this->Member = $Member;
+
+            return $this;
+        }
+
+        public function getDisbursementType(): ?DisbursementType
+        {
+            return $this->DisbursementType;
+        }
+
+        public function setDisbursementType(?DisbursementType $DisbursementType): self
+        {
+            $this->DisbursementType = $DisbursementType;
+
+            return $this;
+        }
     }
 }

@@ -87,5 +87,94 @@ if (!class_exists('\Plugin\management\Entity\Member\Attendance')) {
          * @ORM\Column(name="note", type="string", length=255)
          */
         private $note;
+
+        public function getId(): ?int
+        {
+            return $this->id;
+        }
+
+        public function getSupplierCode(): ?string
+        {
+            return $this->supplier_code;
+        }
+
+        public function setSupplierCode(string $supplier_code): self
+        {
+            $this->supplier_code = $supplier_code;
+
+            return $this;
+        }
+
+        public function getStartTime(): ?string
+        {
+            return $this->start_time;
+        }
+
+        public function setStartTime(string $start_time): self
+        {
+            $this->start_time = $start_time;
+
+            return $this;
+        }
+
+        public function getEndTime(): ?string
+        {
+            return $this->end_time;
+        }
+
+        public function setEndTime(string $end_time): self
+        {
+            $this->end_time = $end_time;
+
+            return $this;
+        }
+
+        public function getWorkHour()
+        {
+            return $this->work_hour;
+        }
+
+        public function setWorkHour($work_hour): self
+        {
+            $this->work_hour = $work_hour;
+
+            return $this;
+        }
+
+        public function getCreateDate(): ?\DateTimeInterface
+        {
+            return $this->create_date;
+        }
+
+        public function setCreateDate(\DateTimeInterface $create_date): self
+        {
+            $this->create_date = $create_date;
+
+            return $this;
+        }
+
+        public function getUpdateDate(): ?\DateTimeInterface
+        {
+            return $this->update_date;
+        }
+
+        public function setUpdateDate(\DateTimeInterface $update_date): self
+        {
+            $this->update_date = $update_date;
+
+            return $this;
+        }
+
+        public function getNote(): ?string
+        {
+            return $this->note;
+        }
+
+        public function setNote(string $note): self
+        {
+            $this->note = $note;
+
+            return $this;
+        }
     }
 }

@@ -126,5 +126,15 @@ if (!class_exists('\Plugin\management\Entity\Suppliers\Suppliers')) {
 
             return $this;
         }
+
+        public function getCreateDate(): ?\DateTimeInterface
+        {
+            return $this->create_date;
+        }
+
+        public function getUpdateDate(): ?\DateTimeInterface
+        {
+            return $this->update_date;
+        }
     }
 }
