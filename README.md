@@ -33,7 +33,7 @@ bin/console cache:clear --no-warmup
 * 会員管理
   * 顧客管理(会員管理を流用)
 * 取引先管理
-  * 取引先管理(Suppliers)
+  * 取引先管理(Supplier)
   * 案件管理
   * イベント管理
 * メンバー管理管理
