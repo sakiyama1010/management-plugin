@@ -73,7 +73,7 @@ class CustomerController extends AbstractController
      * 顧客イベント一覧
      * @Route("/%eccube_admin_route%/customer/event", name="admin_customer_event", methods={"GET", "POST"})
      * @Route("/%eccube_admin_route%/customer/event/page/{page_no}", requirements={"page_no" = "\d+"}, name="admin_customer_event_page", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/event/index.twig")
+     * @Template("@Management42/admin/Customer/event/index.twig")
      */
     public function eventIndex(Request $request, PaginatorInterface $paginator, $page_no = null)
     {
@@ -193,7 +193,7 @@ class CustomerController extends AbstractController
     /**
      * 顧客イベント登録
      * @Route("/%eccube_admin_route%/customer/event/new", name="admin_customer_event_new", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/event/edit.twig")
+     * @Template("@Management42/admin/Customer/event/edit.twig")
      */
     public function eventRegist(Request $request)
     {
@@ -235,7 +235,7 @@ class CustomerController extends AbstractController
     /**
      * 顧客イベント更新
      * @Route("/%eccube_admin_route%/customer/event/{id}/edit", requirements={"id" = "\d+"}, name="admin_customer_event_edit", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/event/edit.twig")
+     * @Template("@Management42/admin/Customer/event/edit.twig")
      * @param Request リクエスト
      * @param id 該当データのID
      */
@@ -288,7 +288,7 @@ class CustomerController extends AbstractController
      * 顧客案件一覧
      * @Route("/%eccube_admin_route%/customer/project", name="admin_customer_project", methods={"GET"})
      * @Route("/%eccube_admin_route%/customer/project/page/{page_no}", requirements={"page_no" = "\d+"}, name="admin_customer_project_page", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/project/index.twig")
+     * @Template("@Management42/admin/Customer/project/index.twig")
      */
     public function projectIndex(Request $request, PaginatorInterface $paginator, $page_no = null)
     {
@@ -299,7 +299,7 @@ class CustomerController extends AbstractController
      * 顧客案件登録
      * @Route("/%eccube_admin_route%/customer/project/new", name="admin_customer_project_new", methods={"GET", "POST"})
      * @Route("/%eccube_admin_route%/customer/project/{id}/edit", requirements={"id" = "\d+"}, name="admin_customer_project_edit", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/project/edit.twig")
+     * @Template("@Management42/admin/Customer/project/edit.twig")
      */
     public function projectEdit(Request $request)
     {
@@ -309,7 +309,7 @@ class CustomerController extends AbstractController
     //TODO
     /**
      * @Route("/%eccube_admin_route%/customer/project/new", name="admin_supplier", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/project/edit.twig")
+     * @Template("@Management42/admin/Customer/project/edit.twig")
      */
     public function admin_supplier(Request $request)
     {
@@ -317,7 +317,7 @@ class CustomerController extends AbstractController
     }
     /**
      * @Route("/%eccube_admin_route%/customer/project/new", name="admin_supplier_project", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/project/edit.twig")
+     * @Template("@Management42/admin/Customer/project/edit.twig")
      */
     public function admin_supplier_project(Request $request)
     {
@@ -325,7 +325,7 @@ class CustomerController extends AbstractController
     }
     /**
      * @Route("/%eccube_admin_route%/customer/project/new", name="admin_supplier_event", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/project/edit.twig")
+     * @Template("@Management42/admin/Customer/project/edit.twig")
      */
     public function admin_supplier_event(Request $request)
     {
@@ -333,7 +333,7 @@ class CustomerController extends AbstractController
     }
     /**
      * @Route("/%eccube_admin_route%/customer/project/new", name="admin_receipt", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/project/edit.twig")
+     * @Template("@Management42/admin/Customer/project/edit.twig")
      */
     public function admin_receipt(Request $request)
     {
@@ -341,7 +341,7 @@ class CustomerController extends AbstractController
     }
     /**
      * @Route("/%eccube_admin_route%/customer/project/new", name="admin_disbursement", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/project/edit.twig")
+     * @Template("@Management42/admin/Customer/project/edit.twig")
      */
     public function admin_disbursement(Request $request)
     {
@@ -349,7 +349,7 @@ class CustomerController extends AbstractController
     }
     /**
      * @Route("/%eccube_admin_route%/customer/project/new", name="admin_attendance", methods={"GET", "POST"})
-     * @Template("@management/admin/Customer/project/edit.twig")
+     * @Template("@Management42/admin/Customer/project/edit.twig")
      */
     public function admin_attendance(Request $request)
     {
