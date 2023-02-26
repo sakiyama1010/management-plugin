@@ -7,7 +7,7 @@
         "ec-cube/plugin-installer": "^2.0"
     },
     "extra": {
-        "code": "management"
+        "code": "Management42"
     },
     "license": "proprietary"
 }
