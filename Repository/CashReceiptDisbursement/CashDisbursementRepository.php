@@ -1,10 +1,10 @@
 <?php
 
-namespace Plugin\management\Repository\CashReceiptDisbursement;
+namespace Plugin\Management42\Repository\CashReceiptDisbursement;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
-use Plugin\management\Entity\CashDisbursementDisbursement\CashDisbursement;
+use Plugin\Management42\Entity\CashDisbursementDisbursement\CashDisbursement;
 
 /**
  * @extends ServiceEntityRepository<CashDisbursement>

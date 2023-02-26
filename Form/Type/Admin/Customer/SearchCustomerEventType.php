@@ -11,10 +11,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Form\Type\Admin\Customer;
+namespace Plugin\Management42\Form\Type\Admin\Customer;
 
 use Eccube\Common\EccubeConfig;
-use Plugin\management\Repository\Customer\CustomerEventRepository;
+use Plugin\Management42\Repository\Customer\CustomerEventRepository;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;

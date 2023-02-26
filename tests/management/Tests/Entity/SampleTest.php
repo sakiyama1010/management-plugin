@@ -11,9 +11,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\tests\management\Tests\Entity;
+namespace Plugin\Management42\tests\management\Tests\Entity;
 
-use Plugin\management\Entity\Sample;
+use Plugin\Management42\Entity\Sample;
 use Eccube\Tests\EccubeTestCase;
 use Eccube\Tests\Fixture\Generator;
 

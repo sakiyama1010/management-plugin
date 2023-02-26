@@ -11,12 +11,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Entity\CashDisbursementDisbursement;
+namespace Plugin\Management42\Entity\CashDisbursementDisbursement;
 
 use Doctrine\ORM\Mapping as ORM;
 use Eccube\Entity\AbstractEntity;
 use Eccube\Entity\Member;
-use Plugin\management\Entity\Master\DisbursementType;
+use Plugin\Management42\Entity\Master\DisbursementType;
 use Symfony\Component\Validator\Constraints as Assert;
 
 if (!class_exists(CashDisbursement::class, false)) {
@@ -24,7 +24,7 @@ if (!class_exists(CashDisbursement::class, false)) {
      * CashDisbursement
      *
      * @ORM\Table(name="plg_cash_disbursement")
-     * @ORM\Entity(repositoryClass="Plugin\management\Repository\CashReceiptDisbursement\CashDisbursementRepository")
+     * @ORM\Entity(repositoryClass="Plugin\Management42\Repository\CashReceiptDisbursement\CashDisbursementRepository")
      */
     class CashDisbursement extends AbstractEntity
     {
@@ -82,9 +82,9 @@ if (!class_exists(CashDisbursement::class, false)) {
         private $Member;
 
         /**
-         * @var \Plugin\management\Entity\Master\DisbursementType 支出区分
+         * @var \Plugin\Management42\Entity\Master\DisbursementType 支出区分
          *
-         * @ORM\ManyToOne(targetEntity="Plugin\management\Entity\Master\DisbursementType")
+         * @ORM\ManyToOne(targetEntity="Plugin\Management42\Entity\Master\DisbursementType")
          * @ORM\JoinColumns({
          *   @ORM\JoinColumn(name="disbursement_type_id", referencedColumnName="id")
          * })

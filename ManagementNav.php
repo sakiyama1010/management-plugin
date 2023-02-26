@@ -11,7 +11,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management;
+namespace Plugin\Management42;
 
 use Eccube\Common\EccubeNav;
 

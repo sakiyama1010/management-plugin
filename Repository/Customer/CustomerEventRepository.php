@@ -11,13 +11,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Repository\Customer;
+namespace Plugin\Management42\Repository\Customer;
 
 use Eccube\Repository\AbstractRepository;
-use Plugin\management\Entity\Customer\CustomerEvent;
+use Plugin\Management42\Entity\Customer\CustomerEvent;
 use Doctrine\Persistence\ManagerRegistry as RegistryInterface;
 use Eccube\Doctrine\Query\Queries;
-use Plugin\management\Entity\CustomerTrait;
+use Plugin\Management42\Entity\CustomerTrait;
 
 /**
  * 顧客イベントリポジトリ

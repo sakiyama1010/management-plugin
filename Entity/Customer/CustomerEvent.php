@@ -11,18 +11,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Entity\Customer;
+namespace Plugin\Management42\Entity\Customer;
 
 use Doctrine\ORM\Mapping as ORM;
 use Eccube\Entity\AbstractEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 
-if (!class_exists('\Plugin\management\Entity\Customer\CustomerEvent')) {
+if (!class_exists('\Plugin\Management42\Entity\Customer\CustomerEvent')) {
     /**
      * 顧客イベント
      *
      * @ORM\Table(name="plg_customer_event")
-     * @ORM\Entity(repositoryClass="Plugin\management\Repository\Customer\CustomerEventRepository")
+     * @ORM\Entity(repositoryClass="Plugin\Management42\Repository\Customer\CustomerEventRepository")
      */
     class CustomerEvent extends AbstractEntity
     {

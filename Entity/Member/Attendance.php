@@ -11,18 +11,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Entity\Member;
+namespace Plugin\Management42\Entity\Member;
 
 use Doctrine\ORM\Mapping as ORM;
 use Eccube\Entity\AbstractEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 
-if (!class_exists('\Plugin\management\Entity\Member\Attendance')) {
+if (!class_exists('\Plugin\Management42\Entity\Member\Attendance')) {
     /**
      * attendance
      *
      * @ORM\Table(name="plg_member_attendance")
-     * @ORM\Entity(repositoryClass="Plugin\management\Repository\Member\AttendanceRepository")
+     * @ORM\Entity(repositoryClass="Plugin\Management42\Repository\Member\AttendanceRepository")
      */
     class Attendance extends AbstractEntity
     {

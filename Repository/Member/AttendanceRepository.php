@@ -1,10 +1,10 @@
 <?php
 
-namespace Plugin\management\Repository\Member;
+namespace Plugin\Management42\Repository\Member;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
-use Plugin\management\Entity\Member\Attendance;
+use Plugin\Management42\Entity\Member\Attendance;
 
 /**
  * @extends ServiceEntityRepository<Attendance>

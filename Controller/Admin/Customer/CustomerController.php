@@ -11,7 +11,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Controller\Admin\Customer;
+namespace Plugin\Management42\Controller\Admin\Customer;
 
 use Eccube\Common\Constant;
 use Eccube\Controller\AbstractController;
@@ -26,10 +26,10 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Form\Form;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-use Plugin\management\Repository\Customer\CustomerEventRepository;
-use Plugin\management\Form\Type\Admin\Customer\SearchCustomerEventType;
-use Plugin\management\Form\Type\Admin\Customer\CustomerEventType;
-use Plugin\management\Entity\Customer\CustomerEvent;
+use Plugin\Management42\Repository\Customer\CustomerEventRepository;
+use Plugin\Management42\Form\Type\Admin\Customer\SearchCustomerEventType;
+use Plugin\Management42\Form\Type\Admin\Customer\CustomerEventType;
+use Plugin\Management42\Entity\Customer\CustomerEvent;
 
 /**
  * 顧客コントローラークラス

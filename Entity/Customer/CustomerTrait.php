@@ -11,7 +11,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Entity\Customer;
+namespace Plugin\Management42\Entity\Customer;
 
 use Doctrine\ORM\Mapping as ORM;
 use Eccube\Annotation as Eccube;

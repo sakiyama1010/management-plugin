@@ -11,9 +11,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Repository\Master;
+namespace Plugin\Management42\Repository\Master;
 
-use Plugin\management\Entity\Master\SampleStatus;
+use Plugin\Management42\Entity\Master\SampleStatus;
 use Doctrine\Persistence\ManagerRegistry as RegistryInterface;
 use Eccube\Repository\AbstractRepository;
 

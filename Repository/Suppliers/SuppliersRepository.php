@@ -1,10 +1,10 @@
 <?php
 
-namespace Plugin\management\Repository\Suppliers;
+namespace Plugin\Management42\Repository\Suppliers;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
-use Plugin\management\Entity\Suppliers\Suppliers;
+use Plugin\Management42\Entity\Suppliers\Suppliers;
 
 /**
  * @extends ServiceEntityRepository<Suppliers>

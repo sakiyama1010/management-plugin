@@ -11,7 +11,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Service;
+namespace Plugin\Management42\Service;
 
 use Carbon\Carbon;
 

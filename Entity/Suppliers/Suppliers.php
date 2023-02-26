@@ -11,18 +11,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Plugin\management\Entity\Suppliers;
+namespace Plugin\Management42\Entity\Suppliers;
 
 use Doctrine\ORM\Mapping as ORM;
 use Eccube\Entity\AbstractEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 
-if (!class_exists('\Plugin\management\Entity\Suppliers\Suppliers')) {
+if (!class_exists('\Plugin\Management42\Entity\Suppliers\Suppliers')) {
     /**
      * 取引先
      *
      * @ORM\Table(name="plg_suppliers")
-     * @ORM\Entity(repositoryClass="Plugin\management\Repository\Suppliers\SuppliersRepository")
+     * @ORM\Entity(repositoryClass="Plugin\Management42\Repository\Suppliers\SuppliersRepository")
      */
     class Suppliers extends AbstractEntity
     {

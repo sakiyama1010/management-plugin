@@ -1,6 +1,6 @@
 <?php
 
-namespace Plugin\management;
+namespace Plugin\Management42;
 
 use Eccube\Plugin\AbstractPluginManager;
 use Symfony\Component\DependencyInjection\ContainerInterface;
