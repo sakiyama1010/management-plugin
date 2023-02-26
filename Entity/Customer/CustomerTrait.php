@@ -23,10 +23,9 @@ trait CustomerTrait
 {
 
     /**
-     * @var string
+     * @var string|null
      *
      * @ORM\Column(name="customer_code", type="string", length=100)
-     * @Assert\NotBlank
      */
     private $customer_code;
 

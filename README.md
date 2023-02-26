@@ -17,13 +17,13 @@ sudo git pull && docker exec -it manage-eccube-ec-cube-1 bin/console cache:clear
 ## コンテナ上
 # Plugin配下にシンボリックを設定
 cd /var/www/html
-ln -s /management ./app/Plugin
+ln -s /Management42 ./app/Plugin
 # アンイストール
-bin/console eccube:plugin:uninstall --code management
+bin/console eccube:plugin:uninstall --code Management42
 # インストール
-bin/console eccube:plugin:install --code management
+bin/console eccube:plugin:install --code Management42
 # 有効化
-bin/console eccube:plugin:enable --code management
+bin/console eccube:plugin:enable --code Management42
 # キャッシュクリア
 bin/console cache:clear --no-warmup
 ```
@@ -57,9 +57,6 @@ bin/console cache:clear --no-warmup
   * PlayWrightをGithub Actionで実行する
   * codeceptionを試してみる
 * joinしたテーブルの顧客名を出したい
-* プラグインの物理フォルダ名が小文字になってる
-* サンプルコードは消す
-  * 置換して入れられる状態を作りたい
 
 ## 参考
 
