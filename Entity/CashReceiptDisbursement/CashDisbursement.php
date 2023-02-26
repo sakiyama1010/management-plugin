@@ -36,6 +36,57 @@ if (!class_exists('\Plugin\management\Entity\CashReceiptDisbursement\CashDisburs
         private $id;
 
         /**
+         * @var string 支出内容
+         *
+         * @ORM\Column(name="summary", type="string", length=100)
+         * @Assert\NotBlank
+         */
+        private $summary;
+
+        /**
+         * @var string 支出先
+         *
+         * @ORM\Column(name="payee", type="string", length=100)
+         * @Assert\NotBlank
+         */
+        private $payee;
+
+        /**
+         * 
+         * @var string 支払金額(円)
+         *
+         * @ORM\Column(name="pay_amount_yen", type="decimal", precision=12, scale=2, options={"unsigned":true,"default":0})
+         * @Assert\NotBlank
+         */
+        private $pay_amount_yen;
+
+        /**
+         * 
+         * @var string 支払金額(ドル)
+         *
+         * @ORM\Column(name="pay_amount_dollar", type="decimal", precision=12, scale=2, options={"unsigned":true,"default":0})
+         * @Assert\NotBlank
+         */
+        private $pay_amount_dollar;
+
+        /**
+         * @var \Eccube\Entity\Member 申請者
+         *
+         * @ORM\ManyToOne(targetEntity="Eccube\Entity\Member")
+         * @ORM\JoinColumns({
+         *   @ORM\JoinColumn(name="member_id", referencedColumnName="id")
+         * })
+         */
+        private $Member;
+
+        /**
+         * @var \DateTime 支払日時
+         *
+         * @ORM\Column(name="payment_date", type="datetimetz")
+         */
+        private $payment_date;
+
+        /**
          * @var \DateTime 登録日時
          *
          * @ORM\Column(name="create_date", type="datetimetz")
