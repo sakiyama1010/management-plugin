@@ -1,29 +1,12 @@
-# nav
-admin.nav.sample.list: サンプル管理一覧
-admin.nav.sample.edit: サンプル登録
-admin.nav.sample.csv_import: サンプルCSV登録
-
-# flash messages
-admin.sample.save.complete: サンプル情報登録しました。
-admin.sample.save.failed: サンプル情報登録に失敗しました。
-
-# twig
-admin.sample.sample_management: サンプル管理
-admin.sample.sample_list: サンプル一覧
-admin.sample.sample_registration: サンプル登録
-admin.sample.sample_csv_upload: サンプルCSV登録
-
-admin.sample.multi_search_label: マルチ検索
-admin.sample.title: サンプル名
-admin.sample.detail: 詳細
-admin.sample.sample_info: サンプル情報
-
 #--------------------------------------------------
 # management
 #--------------------------------------------------
-# nav
-admin.customer.customer_project_list: 顧客案件管理
-admin.customer.customer_event_list: 顧客イベント管理
+# supplier
+## nav
+admin.supplier.supplier_list: 取引先管理
+admin.supplier.customer_list: 顧客管理
+admin.supplier.project_list: 案件管理
+admin.supplier.event_list: イベント管理
 
 # flash messages
 admin.customer_event.save.complete: 顧客イベント情報を登録しました。

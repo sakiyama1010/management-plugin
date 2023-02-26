@@ -34,17 +34,17 @@ class ManagementNav implements EccubeNav
                     ],
                     // 顧客管理(既存)
                     'member' => [
-                        'name' => 'admin.customer.customer_list',
+                        'name' => 'admin.supplier.customer_list',
                         'url' => 'admin_customer',
                     ],
                     // 取引先案件管理
                     'supplier_project' => [
-                        'name' => 'admin.supplier.supplier_project_list',
+                        'name' => 'admin.supplier.project_list',
                         'url' => 'admin_supplier_project',
                     ],
                     // 取引先イベント管理
                     'supplier_event' => [
-                        'name' => 'admin.supplier.supplier_event_list',
+                        'name' => 'admin.supplier.event_list',
                         'url' => 'admin_supplier_event',
                     ],
                 ],
