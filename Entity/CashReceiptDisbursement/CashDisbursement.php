@@ -17,7 +17,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Eccube\Entity\AbstractEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 
-if (!class_exists('\Plugin\management\Entity\CashReceiptDisbursement\CashDisbursement')) {
+if (!class_exists(CashDisbursement::class, false)) {
     /**
      * CashDisbursement
      *
@@ -80,6 +80,16 @@ if (!class_exists('\Plugin\management\Entity\CashReceiptDisbursement\CashDisburs
         private $Member;
 
         /**
+         * @var \Plugin\management\Entity\Master\DisbursementType 支出区分
+         *
+         * @ORM\ManyToOne(targetEntity="Plugin\management\Entity\Master\DisbursementType")
+         * @ORM\JoinColumns({
+         *   @ORM\JoinColumn(name="disbursement_type_id", referencedColumnName="id")
+         * })
+         */
+        private $DisbursementType;
+
+        /**
          * @var \DateTime 支払日時
          *
          * @ORM\Column(name="payment_date", type="datetimetz")
@@ -101,9 +111,9 @@ if (!class_exists('\Plugin\management\Entity\CashReceiptDisbursement\CashDisburs
         private $update_date;
 
         /**
-         * @var string 備考
+         * @var string|null 備考
          *
-         * @ORM\Column(name="note", type="string", length=255)
+         * @ORM\Column(name="note", type="string", length=4000, nullable=true)
          */
         private $note;
     }
