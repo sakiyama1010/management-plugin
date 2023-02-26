@@ -62,7 +62,7 @@ if (!class_exists('\Plugin\management\Entity\Member\Attendance')) {
         /**
          * @var string 勤務時間
          *
-         * @ORM\Column(name="work_hour", type="int", length=10)
+         * @ORM\Column(name="work_hour", type="decimal", precision=12, scale=2, options={"unsigned":true,"default":0})
          * @Assert\NotBlank
          */
         private $work_hour;
